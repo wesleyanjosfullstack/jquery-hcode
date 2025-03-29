@@ -6,15 +6,16 @@
     <title>jQuery</title>
 </head>
 <body>
-    <h1>Primeiro código jQuery</h1>
+    <h1 id="title">Primeiro código jQuery</h1>
+    <img src="./image/hcode.png" alt="imagem de fundo" width="100%">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
-        // window.onload = function() {
-        //     alert('Minha página!')
-        // }
+        function stylizeTitle() {
+            document.getElementById('title').style.color = 'red'
+        }
 
-        jQuery(document).ready(function() {
-            alert('Minha página carregou com jQuery!')
+        $(document).ready(function() {
+            stylizeTitle()
         })
     </script>
 </body>
